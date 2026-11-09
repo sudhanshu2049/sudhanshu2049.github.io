@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071018" />
+    <title>Resume — Sudhanshu Yadav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root { color-scheme: dark; --bg: #071018; --text: #eef5f5; --muted: #93a7ad; --line: rgba(180,218,220,.16); --cyan: #63e0d2; --mono: "DM Mono", monospace; --sans: "Manrope", system-ui, sans-serif; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); }
+      .toolbar { position: sticky; top: 0; z-index: 5; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:14px clamp(18px,5vw,68px); border-bottom:1px solid var(--line); background:rgba(7,16,24,.92); backdrop-filter:blur(16px); }
+      .identity { color:var(--text); text-decoration:none; font-weight:700; }
+      .identity span { color:var(--cyan); }
+      .actions { display:flex; align-items:center; gap:10px; }
+      .actions a { padding:10px 14px; border:1px solid var(--line); color:var(--text); text-decoration:none; font-size:.78rem; }
+      .actions .download { border-color:var(--cyan); background:var(--cyan); color:#061515; font-weight:700; }
+      .intro { width:min(900px,90vw); margin:36px auto 18px; }
+      .eyebrow { color:var(--cyan); font:.65rem var(--mono); letter-spacing:.12em; }
+      h1 { margin:10px 0 4px; font-size:clamp(1.7rem,4vw,2.7rem); letter-spacing:-.06em; }
+      .intro p:last-child { color:var(--muted); font-size:.88rem; }
+      #resume-frame { display:block; width:min(1000px,94vw); height:min(78vh,1050px); min-height:640px; margin:0 auto 56px; border:1px solid var(--line); background:#fff; box-shadow:0 22px 70px rgba(0,0,0,.3); }
+      @media (max-width:560px) { .toolbar { align-items:flex-start; } .identity { padding-top:10px; } .actions a { padding:9px 10px; font-size:.7rem; } #resume-frame { width:100%; min-height:72vh; height:72vh; margin-bottom:0; } }
+    </style>
+  </head>
+  <body>
+    <header class="toolbar">
+      <a class="identity" href="index.html">SY<span>.</span> <span style="color:inherit;font-weight:500">/ Resume</span></a>
+      <div class="actions">
+        <a href="index.html">Back to portfolio</a>
+        <a href="assets/Sudhanshu_Yadav_SDE_Resume.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+        <a class="download" href="assets/Sudhanshu_Yadav_SDE_Resume.pdf" download>Download PDF ↓</a>
+      </div>
+    </header>
+    <section class="intro">
+      <p class="eyebrow">SUDHANSHU YADAV / RESUME</p>
+      <h1>Experience, skills, and education.</h1>
+      <p>Preview the PDF here, or download it to keep a copy for offline viewing.</p>
+    </section>
+    <main>
+      <iframe id="resume-frame" src="assets/Sudhanshu_Yadav_SDE_Resume.pdf#view=FitH" title="Sudhanshu Yadav resume PDF preview"></iframe>
+    </main>
+  </body>
+</html>

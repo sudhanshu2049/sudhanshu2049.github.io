@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071018" />
+    <meta name="description" content="Sudhanshu Yadav builds practical AI, machine learning, and data projects." />
+    <title>Sudhanshu Yadav — AI &amp; Data Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Sudhanshu Yadav home">SY<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#journey">Journey</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a class="nav-contact" href="#contact">Contact <span>↗</span></a>
+      </nav>
+    </header>
+
+    <div class="scene-shell" aria-hidden="true">
+      <div class="scene-fallback"></div>
+      <canvas id="scene-canvas"></canvas>
+      <span class="scene-caption">DRAG TO ROTATE · WHEEL TO ADJUST SPEED</span>
+    </div>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> AI / ML SYSTEMS <span class="eyebrow-divider">/</span> DATA · SOFTWARE</p>
+          <h1>Hi, I’m<br /><span>Sudhanshu Yadav.</span></h1>
+          <p class="hero-tagline">Building Practical AI &amp;<br class="desktop-break" /> Machine Learning Projects</p>
+          <p class="hero-intro">I explore how AI and machine learning can solve real problems, building predictive models, NLP experiments, and interactive data tools.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore projects <span>↓</span></a>
+            <a class="button button-resume" href="resume.html" target="_blank" rel="noopener">View resume <span>↗</span></a>
+            <a class="button button-quiet" href="mailto:sudhanshuyadav2019@gmail.com">Let’s connect <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-meta"><span>BASED IN INDIA</span><span>OPEN TO INTERNSHIP OPPORTUNITIES</span></div>
+      </section>
+
+      <section class="journey section-wrap section-block" id="journey">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / MY JOURNEY</p>
+          <h2>Learning by<br /><span>building things.</span></h2>
+        </div>
+        <div class="journey-copy reveal">
+          <p class="lead">I’m interested in how code and data can solve practical problems. I learn by exploring an idea, building a working version, and improving it as I go.</p>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-index">01</span>
+              <div><h3>Explore</h3><p>Learn programming, data analysis, and the foundations behind machine learning.</p></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-index">02</span>
+              <div><h3>Build</h3><p>Turn what I learn into visualizations, interactive dashboards, and applications.</p></div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-index">03</span>
+              <div><h3>Improve</h3><p>Make projects easier to understand, run, and explore—and keep learning from each one.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-wrap section-block" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / SELECTED WORK</p>
+          <h2>Projects with<br /><span>a purpose.</span></h2>
+          <p class="section-note">A few things I’ve explored, analyzed, and built.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-art ntpc-art" aria-hidden="true">
+              <div class="art-grid"></div><div class="chart-label">FINANCIAL PERFORMANCE</div>
+              <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <svg viewBox="0 0 600 170" preserveAspectRatio="none"><path d="M0 135 C65 118 75 82 145 100 S230 135 285 78 S365 95 415 52 S515 65 600 12" /></svg>
+              <span class="art-tag">LIVE DASHBOARD</span>
+            </div>
+            <div class="project-info">
+              <div class="project-topline"><span>01 — DATA APP</span><span>2026</span></div>
+              <h3>NTPC Financial<br />Performance Dashboard</h3>
+              <p>Explore company financial data from March 2023 to March 2026 through an interactive Streamlit dashboard, with a small model comparison.</p>
+              <div class="tag-list"><span>Python</span><span>Streamlit</span><span>Data analysis</span></div>
+              <div class="project-links"><a href="https://ntpc-financial-dashboard.streamlit.app" target="_blank" rel="noreferrer">Live demo <span>↗</span></a><a href="https://github.com/sudhanshu2049/NTPC_Dashboard" target="_blank" rel="noreferrer">Source code <span>↗</span></a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-art chess-art" aria-hidden="true">
+              <div class="chess-board"><i>♜</i><i>♞</i><i>♝</i><i>♛</i><i>♚</i><i>♝</i><i>♞</i><i>♜</i><i></i><i>♟</i><i></i><i>♟</i><i></i><i>♟</i><i></i><i>♟</i></div>
+              <span class="art-tag">JAVA APPLICATION</span>
+            </div>
+            <div class="project-info">
+              <div class="project-topline"><span>02 — APPLICATION</span><span>JAVA</span></div>
+              <h3>2D Java Chess Game</h3>
+              <p>A Swing-based chess game with piece logic, move validation, and MySQL/JDBC game storage.</p>
+              <div class="tag-list"><span>Java</span><span>Swing</span><span>MySQL</span></div>
+              <div class="project-links"><a href="https://github.com/sudhanshu2049/2d-java-chess-game" target="_blank" rel="noreferrer">View project <span>↗</span></a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-art sentiment-art" aria-hidden="true">
+              <div class="sentiment-window">
+                <span class="sentiment-window-dot"></span><span class="sentiment-window-dot"></span><span class="sentiment-window-dot"></span>
+                <div class="sentiment-line sentiment-line-long"></div><div class="sentiment-line"></div>
+                <div class="sentiment-result"><span>REVIEW SENTIMENT</span><strong>Positive <i>↗</i></strong><div class="sentiment-meter"><b></b></div></div>
+              </div>
+              <span class="art-tag">LSTM · NLP</span>
+            </div>
+            <div class="project-info">
+              <div class="project-topline"><span>03 — NLP PROJECT</span><span>PYTHON</span></div>
+              <h3>IMDb Sentiment Analysis</h3>
+              <p>An LSTM model that classifies IMDb movie reviews as positive or negative based on their text.</p>
+              <div class="tag-list"><span>Python</span><span>LSTM</span><span>NLP</span></div>
+              <div class="project-links"><a href="https://github.com/sudhanshu2049/sentiment-analysis-lstm-imdb" target="_blank" rel="noreferrer">View project <span>↗</span></a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-wrap section-block" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 / TOOLKIT</p>
+          <h2>Tools I use<br /><span>to make ideas real.</span></h2>
+        </div>
+        <div class="skills-panel reveal">
+          <div class="skill-row"><span class="skill-label">LANGUAGES</span><div class="skill-items"><span>Python</span><span>Java</span><span>C++</span><span>SQL</span></div></div>
+          <div class="skill-row"><span class="skill-label">DATA &amp; ML</span><div class="skill-items"><span>NumPy</span><span>Pandas</span><span>Jupyter</span><span>Machine Learning</span></div></div>
+          <div class="skill-row"><span class="skill-label">VISUALIZATION</span><div class="skill-items"><span>Matplotlib</span><span>Seaborn</span><span>Power BI</span></div></div>
+          <div class="skill-row"><span class="skill-label">APPLICATIONS &amp; TOOLS</span><div class="skill-items"><span>Streamlit</span><span>MySQL</span><span>Git</span><span>GitHub</span></div></div>
+        </div>
+      </section>
+
+      <section class="future section-wrap section-block" id="future">
+        <div class="future-card reveal">
+          <p class="eyebrow">04 / WHAT’S NEXT</p>
+          <h2>Curious about<br /><span>what I can build next.</span></h2>
+          <p>I’m working toward stronger machine learning projects, clearer data storytelling, and software that’s useful beyond a demo.</p>
+          <a class="text-link" href="https://github.com/sudhanshu2049" target="_blank" rel="noreferrer">Follow my work on GitHub <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact section-wrap section-block" id="contact">
+        <div class="contact-inner reveal">
+          <p class="eyebrow">05 / SAY HELLO</p>
+          <h2>Have an idea or<br /><span>opportunity?</span></h2>
+          <p class="contact-copy">I’m open to connecting about AI, machine learning, data projects, and internships.</p>
+          <a class="email-link" href="mailto:sudhanshuyadav2019@gmail.com">sudhanshuyadav2019@gmail.com <span>↗</span></a>
+          <div class="social-links"><a href="https://github.com/sudhanshu2049" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/sudhanshuyadav2004/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/skyd_rav3n/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
+        </div>
+        <footer><span>© <span id="year"></span> Sudhanshu Yadav</span><a href="#home">BACK TO TOP ↑</a></footer>
+      </section>
+    </main>
+  </body>
+</html>
